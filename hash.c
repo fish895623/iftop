@@ -106,6 +106,8 @@ void hash_delete_all(hash_type* hash_table) {
         while(n != NULL) {
             nn = n->next;
             hash_table->delete_key(n->key);
+			// XXX: it's not need to delete the user's data(rec) ?
+			//hash_table->delete_key(n->rec);
             free(n);
             n = nn;
         }

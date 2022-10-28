@@ -10,7 +10,8 @@
 typedef enum {
     HASH_STATUS_OK,
     HASH_STATUS_MEM_EXHAUSTED,
-    HASH_STATUS_KEY_NOT_FOUND
+    HASH_STATUS_KEY_NOT_FOUND,
+    HASH_STATUS_FAILED
 } hash_status_enum;
 
 typedef struct node_tag {
